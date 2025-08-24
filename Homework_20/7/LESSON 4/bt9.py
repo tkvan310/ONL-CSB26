@@ -29,7 +29,7 @@ result_linear = linear_search(arr, x)
 end_linear = time.time()
 time_linear = end_linear - start_linear
 
-arr_sorted = sorted(arr)  # không làm thay đổi mảng gốc
+arr_sorted = sorted(arr)  
 start_binary = time.time()
 result_binary = binary_search(arr_sorted, x)
 end_binary = time.time()
@@ -39,8 +39,8 @@ print(f"Linear Search:  vị trí {result_linear}, thời gian {time_linear:.8f}
 print(f"Binary Search:  vị trí {result_binary}, thời gian {time_binary:.8f} giây")
 
 if time_linear > time_binary:
-    print("➡ Binary Search nhanh hơn")
+    print("Binary Search nhanh hơn")
 elif time_binary > time_linear:
-    print("➡ Linear Search nhanh hơn (hiếm khi xảy ra)")
+    print(" Linear Search nhanh hơn (hiếm khi xảy ra)")
 else:
-    print("➡ Thời gian gần bằng nhau")
+    print("Thời gian gần bằng nhau")
